@@ -64,8 +64,8 @@ def do_calc(list_text):
     global e
     global n
     for i in range(0,5):
-        sub = int(''.join(list_text[:5]))
-        list_text = (list_text[5:])
+        sub = int(''.join(list_text[:10]))
+        list_text = (list_text[10:])
         soln = ((sub)**e) % n
         print(soln)
         ls.append(soln)
@@ -112,14 +112,14 @@ def decipher_helper(L):
         
 
 
-list_text = decrypt("ITG!AAEXEX IRRG!IGRXI OIXGEREAGO")
-data = ''.join(list_text)
-print(data)
-do_calc(list_text)
-p, q = crack_pq()
-# solve_m(3656516678,3226366849)
-#crack_d(p, q)
-L = [47391, 12828, 46639, 43684, 54832]
+# list_text = decrypt("ITG!AAEXEX IRRG!IGRXI OIXGEREAGO")
+# data = ''.join(list_text)
+# print(data)
+# do_calc(list_text)
+# p, q = crack_pq()
+# # solve_m(3656516678,3226366849)
+# #crack_d(p, q)
+L = [36217, 98483, 57847]
 decipher_helper(L)
 
 
